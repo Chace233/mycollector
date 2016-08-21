@@ -1,0 +1,15 @@
+java文件依次的作用：
+AdafruitCrawler 爬取adafruit网站
+XincailiaoCrawler 爬取新材料在线
+TechcrunchCrawler 爬取techcrunch
+KrCrawler 爬取36氪
+Createtable 创建表
+WriteInDB 将爬取的各个网站的文章内容写入数据库的函数封装
+TimerTest 启动定时器 现在只加了新材料和techcrunch  运行这个文件就可以调用网站的类，启动爬取工作
+Functions 函数封装 包括获取时间 获取文件名 JS模拟等 
+
+1、目前新材料和techcrunch的一周爬取已经写好了，其他两个网站还没加。
+2、adafruit网站的爬取是先获取的目录下的所有url，存进数组，再爬取每个url。现在存在一个问题是description字段写入数据库有点问题，
+其他没问题，学长你看看，我现在在公司和住的地方都上不了这个网站，所有没办法调
+3、36kr的爬取现在存在没有将获取到的url全部爬取下来的问题
+4、数据库文件我已经导出，是database那个文件夹
